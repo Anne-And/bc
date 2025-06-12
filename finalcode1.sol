@@ -15,9 +15,9 @@ contract LandTransferSystem {
     }
 
     address public immutable creator;
-    mapping(address => bool) public admins;
-    mapping(uint => Land) public lands;
-    mapping(address => uint[]) public ownedLands;
+    mapping(address => bool) public admins; //for admin verfication
+    mapping(uint => Land) public lands; //for transfer of land
+    mapping(address => uint[]) public ownedLands; //for showing the history of land owners for a given land
     
     uint public landCount;
     
